@@ -13,7 +13,7 @@ class EmailAddressParser
   def parse 
     @emails.split(' ')
     
-    @emails = @emails.collect do |email|
+    @emails.collect do |email|
       email.gsub(',')
     end 
     
