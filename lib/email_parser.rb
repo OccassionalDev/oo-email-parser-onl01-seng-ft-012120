@@ -11,7 +11,7 @@ class EmailAddressParser
   end
   
   def parse 
-    @emails.split(' ')
+    @emails = @emails.split(' ')
     
     @emails.each do |email|
       email = email.gsub(',')
