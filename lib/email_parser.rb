@@ -14,7 +14,7 @@ class EmailAddressParser
     @emails = @emails.split(' ')
     
     @emails = @emails.collect do |email|
-      email.gsub(',')
+      email.delete(',')
     end 
     
     @emails.uniq 
